@@ -113,72 +113,6 @@ html {
   font-family: 'Jim Nightshade', cursive;
 }
 
-/* Prints Section Styles */
-.shirtPrints {
-  height: 140vh;
-  background: url('./images/printsBackgrd.jpg')center/cover;
-  overflow: hidden;
-}
-
-.printsHeading {
-  text-align: center;
-  margin-top: 10px;
-  font-family: 'Jim Nightshade', cursive;
-}
-
-.topPrints, .bottomPrints {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0;
-}
-
-.prints {
-  text-align: center;
-}
-
-.prints img {
-  height: 200px;
-  width: 200px;
-  cursor: pointer;
-}
-
-.prints img:hover {
-  transform: scale(1.5) rotate(20deg);
-  transition: 1s ease;
-  overflow: hidden;
-}
-
-.imageDiv {
-  overflow: hidden;
-}
-
-.printInfo {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 5px 0;
-}
-
-.thumbsUp {
-  margin-right: 5px;
-}
-
-.printBtn {
-  background: gray;
-}
-
-.prints a {
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: #fff;
-}
-
-.prints h2 {
-  background: rgb(26, 26, 26);
-  padding: 5px 10px;
-  border-radius: 10px;
-
-}
-
 /* Info Page Styles */
 .infoSection {
   height: 55vh;
@@ -253,6 +187,89 @@ html {
   left: 5%;
   font-size: 25px;
   font-family: 'Jim Nightshade', cursive;
+}
+
+/* Prints Section Styles */
+.shirtPrints {
+  padding: 100px 0;
+  background: url('./images/printsBackgrd.jpg')center/cover;
+  overflow: hidden;
+}
+
+.printsHeading {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Jim Nightshade', cursive;
+  font-size: clamp(1.3rem, 3vw, 3rem);
+}
+
+/* .topPrints, .bottomPrints {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 50px 0;
+} */
+
+.topPrints {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+  margin-bottom: 50px;
+}
+
+.bottomPrints {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+}
+
+.prints {
+  text-align: center;
+  overflow: hidden;
+}
+
+.prints img {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.prints img:hover {
+  transform: scale(1.5) rotate(20deg);
+  transition: 1s ease;
+  overflow: hidden;
+}
+
+.imageDiv {
+  overflow: hidden;
+}
+
+.printInfo {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px 0;
+}
+
+.thumbsUp {
+  margin-right: 5px;
+}
+
+.printBtn {
+  background: gray;
+}
+
+.prints a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.prints h2 {
+  background: rgb(26, 26, 26);
+  font-size: clamp(0.8rem, 1.5vw, 3rem);
+  padding: 5px 10px;
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 @media(max-width: 1150px) {

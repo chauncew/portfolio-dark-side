@@ -20,7 +20,7 @@ const Prints = () => {
                         </div>
                         <h3 className="imageHeading">Skull And Roses</h3>
                         <div className="printInfo">
-                            <p>$15.99</p>
+                            <p>$20.99</p>
                             <p><FaThumbsUp className="thumbsUp" />216</p>
                         </div>
                         <a href="#" className='printBtn'><h2>Add To Cart</h2></a>
@@ -32,7 +32,7 @@ const Prints = () => {
                         </div>
                         <h3 className="imageHeading">Skull King</h3>
                         <div className="printInfo">
-                            <p>$15.99</p>
+                            <p>$28.99</p>
                             <p><FaThumbsUp className="thumbsUp" />804</p>
                         </div>
                         <a href="#" className='printBtn'><h2>Add To Cart</h2></a>
@@ -44,7 +44,7 @@ const Prints = () => {
                         </div>
                         <h3 className="imageHeading">Work N Skull</h3>
                         <div className="printInfo">
-                            <p>$15.99</p>
+                            <p>$26.99</p>
                             <p><FaThumbsUp className="thumbsUp" />620</p>
                         </div>
                         <a href="#" className='printBtn'><h2>Add To Cart</h2></a>
@@ -58,7 +58,7 @@ const Prints = () => {
                         </div>
                         <h3 className="imageHeading">Saloon Skull</h3>
                         <div className="printInfo">
-                            <p>$15.99</p>
+                            <p>$26.99</p>
                             <p><FaThumbsUp className="thumbsUp" />450</p>
                         </div>
                         <a href="#" className='printBtn'><h2>Add To Cart</h2></a>
@@ -70,7 +70,7 @@ const Prints = () => {
                         </div>
                         <h3 className="imageHeading">Snake Eyes</h3>
                         <div className="printInfo">
-                            <p>$15.99</p>
+                            <p>$24.99</p>
                             <p><FaThumbsUp className="thumbsUp" />610</p>
                         </div>
                         <a href="#" className='printBtn'><h2>Add To Cart</h2></a>
@@ -82,7 +82,7 @@ const Prints = () => {
                         </div>
                         <h3 className="imageHeading">Divinci Skull</h3>
                         <div className="printInfo">
-                            <p>$15.99</p>
+                            <p>$18.99</p>
                             <p><FaThumbsUp className="thumbsUp" />218</p>
                         </div>
                         <a href="#" className='printBtn'><h2>Add To Cart</h2></a>
