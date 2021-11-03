@@ -1,38 +1,292 @@
-.App {
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Navigation Styles */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  background: rgb(29, 29, 29);
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hamburger {
+  font-size: 35px;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  display: none;
+  cursor: pointer;
+}
+
+.navItems ul {
+  display: flex;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.navItems ul li {
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  margin: 0 20px;
+}
+
+.home {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  margin-right: 50px;
+}
+
+.icons {
+  font-size: 20px;
+  margin-right: 60px;
+}
+
+.icons i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.rightSide .cart {
+  position: relative;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.shoppingAmt {
+  position: absolute;
+  top: 24px;
+  right: 45px;
+}
+
+/* Landing Page Styles */
+.landingPage {
+  height: 85vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.landingImage {
+  width: clamp(250px, 55vw, 500px);
+  margin-left: 30%;
+  object-fit: contain;
+  position: relative;
+  z-index: -1;
+}
+
+.mainHeading {
+  padding-top: 20px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  letter-spacing: 1.5px;
+  font-size: clamp(1.1rem, 3vw, 3rem);
+  font-family: 'Jim Nightshade', cursive;
+}
+
+.mainHeading2 {
+  width: 20%;
+  padding-top: 20px;
+  position: absolute;
+  top: 40%;
+  right: 12%;
+  letter-spacing: 1.5px;
+  font-size: clamp(1.1rem, 2vw, 3rem);
+  font-family: 'Jim Nightshade', cursive;
+}
+
+/* Prints Section Styles */
+.shirtPrints {
+  height: 140vh;
+  background: url('./images/printsBackgrd.jpg')center/cover;
+  overflow: hidden;
+}
+
+.printsHeading {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Jim Nightshade', cursive;
+}
+
+.topPrints, .bottomPrints {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.prints {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.prints img {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.prints img:hover {
+  transform: scale(1.5) rotate(20deg);
+  transition: 1s ease;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.imageDiv {
+  overflow: hidden;
+}
+
+.printInfo {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 5px 0;
+}
+
+.thumbsUp {
+  margin-right: 5px;
+}
+
+.printBtn {
+  background: gray;
+}
+
+.prints a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.prints h2 {
+  background: rgb(26, 26, 26);
+  padding: 5px 10px;
+  border-radius: 10px;
+
+}
+
+/* Info Page Styles */
+.infoSection {
+  height: 55vh;
+  background: rgb(37, 37, 37);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: whitesmoke;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
-.App-link {
-  color: #61dafb;
+.infoPara {
+  font-size: clamp(1.1rem, 2vw, 2rem);
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.infoIcons {
+  margin-bottom: 20px;
+}
+
+.para1 {
+  margin-bottom: 5px;
+}
+
+.percents, .returning, .shippings {
+  font-size: clamp(1.1rem, 4vw, 5rem);
+}
+
+/* Men and Women Section */
+.mensAndWomen {
+  background: #000;
+  padding: 20px 0;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+.menImage, .womensImage {
+  height: 625px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.menImg, .womenImg {
+  position: relative;
+}
+
+.womensImage {
+  object-fit: cover;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.men {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 25px;
+  font-family: 'Jim Nightshade', cursive;
+}
+
+.women {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 25px;
+  font-family: 'Jim Nightshade', cursive;
+}
+
+@media(max-width: 1150px) {
+  .mainHeading2 {
+    top: 30%;
+    left: 5%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media(max-width: 850px) {
+  .navItems {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media(max-width: 500px) {
+  .mainHeading {
+    top: 5%;
+    width: 50%;
+  }
+  .mainHeading2 {
+    top: 20%;
+  }
+  .womenImg img {
+    object-position: left;
+  }
+}
+
+@media(max-width: 420px) {
+  .mainHeading2 {
+    display: none;
   }
 }
